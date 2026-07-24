@@ -3,153 +3,98 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lumi Journal — Privacy Policy</title>
+<title>Lumi Journal — one line a day</title>
+<meta name="description" content="One emoji, one line a day. A tiny journal with gentle weekly AI reflections. No account, no tracking.">
 <style>
-  :root {
-    --bg: #f5f3f7; --card: #ffffff; --ink: #211d26; --muted: #6d6376;
-    --accent: #6d4c7d; --rule: #e4dcec;
-  }
+  :root { --bg:#f5f3f7; --card:#fff; --ink:#211d26; --muted:#6d6376;
+          --accent:#6d4c7d; --rule:#e4dcec; }
   @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #1a1523; --card: #241d30; --ink: #ede8f2; --muted: #b1a6c0;
-      --accent: #c9a9dd; --rule: #3a3048;
-    }
+    :root { --bg:#1a1523; --card:#241d30; --ink:#ede8f2; --muted:#b1a6c0;
+            --accent:#c9a9dd; --rule:#3a3048; }
   }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0; background: var(--bg); color: var(--ink);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    line-height: 1.62; -webkit-font-smoothing: antialiased;
-  }
-  .wrap { max-width: 720px; margin: 0 auto; padding: 56px 24px 96px; }
-  h1, h2 { font-family: Georgia, "Times New Roman", serif; font-weight: 600;
-           line-height: 1.2; color: var(--ink); }
-  h1 { font-size: 2.1rem; margin: 0 0 6px; }
-  h2 { font-size: 1.3rem; margin: 40px 0 10px; }
-  .sub { color: var(--muted); margin: 0 0 40px; font-size: .95rem; }
-  .tldr {
-    background: var(--card); border: 1px solid var(--rule); border-radius: 16px;
-    padding: 20px 22px; margin: 0 0 8px;
-  }
-  .tldr strong { color: var(--accent); }
-  a { color: var(--accent); }
-  ul { padding-left: 20px; }
-  li { margin: 6px 0; }
-  code { background: var(--card); border: 1px solid var(--rule);
-         border-radius: 6px; padding: 1px 6px; font-size: .88em; }
-  hr { border: none; border-top: 1px solid var(--rule); margin: 48px 0 0; }
-  footer { color: var(--muted); font-size: .85rem; margin-top: 20px; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); line-height:1.6;
+         font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+         -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:900px; margin:0 auto; padding:64px 24px 80px; }
+  h1,h2 { font-family:Georgia,"Times New Roman",serif; font-weight:600; line-height:1.15; }
+  .hero { display:flex; gap:32px; align-items:center; flex-wrap:wrap; }
+  .hero img.icon { width:132px; height:132px; border-radius:30px; flex:none;
+                   box-shadow:0 12px 32px rgba(74,51,87,.28); }
+  .hero h1 { font-size:2.6rem; margin:0 0 8px; }
+  .tag { color:var(--muted); font-size:1.15rem; margin:0; }
+  .cta { margin:36px 0 0; color:var(--muted); font-size:.95rem; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+          gap:20px; margin:56px 0 0; }
+  .card { background:var(--card); border:1px solid var(--rule); border-radius:16px;
+          padding:22px; }
+  .card h2 { font-size:1.12rem; margin:0 0 6px; }
+  .card p { margin:0; color:var(--muted); font-size:.96rem; }
+  .shots { display:flex; gap:20px; margin:56px 0 0; flex-wrap:wrap; justify-content:center; }
+  .shots img { width:260px; max-width:100%; border-radius:18px;
+               border:1px solid var(--rule); }
+  footer { margin-top:72px; padding-top:24px; border-top:1px solid var(--rule);
+           color:var(--muted); font-size:.9rem; }
+  a { color:var(--accent); }
 </style>
 </head>
 <body>
 <div class="wrap">
 
-  <h1>Privacy Policy</h1>
-  <p class="sub">Lumi Journal · Last updated 22 July 2026</p>
-
-  <div class="tldr">
-    <p style="margin:0"><strong>The short version.</strong> Lumi Journal has
-    no accounts and collects no personal information. Your journal lives on
-    your device. Nothing is sent anywhere unless you personally tap to
-    generate a weekly reflection — and even then, that week's entries are
-    read once to write the reflection and are never stored on our servers.
-    We don't track you, show ads, or sell data. Ever.</p>
+  <div class="hero">
+    <img class="icon" src="icon.png" alt="Lumi Journal icon">
+    <div>
+      <h1>Lumi Journal</h1>
+      <p class="tag">One emoji, one line a day.<br>Your AI reflection every Sunday.</p>
+    </div>
   </div>
 
-  <h2>Who we are</h2>
-  <p>Lumi Journal ("the app", "we", "us") is published by Firefly Software.
-  Questions? Email <a href="mailto:fireflysoftware1@gmail.com">fireflysoftware1@gmail.com</a>.</p>
+  <p class="cta">Coming soon to the App Store and Google Play.</p>
 
-  <h2>No account, no sign-up</h2>
-  <p>You don't create an account or give us your name, email, or phone
-  number to use Lumi Journal. There is nothing to log into.</p>
+  <div class="grid">
+    <div class="card">
+      <h2>Ten seconds a day</h2>
+      <p>Pick a mood, write one sentence. That's a whole entry — which is
+      exactly why you'll still be doing it next year.</p>
+    </div>
+    <div class="card">
+      <h2>Your year in pixels</h2>
+      <p>Every logged day becomes a colored square. Tap any past day to read
+      or quietly fix it.</p>
+    </div>
+    <div class="card">
+      <h2>Never lose a word</h2>
+      <p>Your line saves itself as you type. Close the app mid-thought — it's
+      already there.</p>
+    </div>
+    <div class="card">
+      <h2>A gentle Sunday reflection</h2>
+      <p>Optional weekly reflections, written by AI from your own entries.
+      The journal itself is free forever.</p>
+    </div>
+    <div class="card">
+      <h2>Private by design</h2>
+      <p>No account, no sign-up, no tracking. Your journal stays on your
+      device, and you can export it all to CSV anytime.</p>
+    </div>
+    <div class="card">
+      <h2>A nudge, not a nag</h2>
+      <p>One optional daily reminder, at a time you choose. Miss a day and
+      nothing breaks.</p>
+    </div>
+  </div>
 
-  <h2>What stays on your device</h2>
-  <p>Everything you write stays on your phone, in the app's local storage:</p>
-  <ul>
-    <li>Your daily entries — the mood you pick and the single line you write, with the date.</li>
-    <li>Any weekly reflections you've generated.</li>
-    <li>Your settings (reminder on/off and time).</li>
-  </ul>
-  <p>We cannot see this data. It never leaves your device except in the one
-  case described next.</p>
+  <div class="shots">
+    <img src="shot_today.png" alt="Today screen with mood picker and year grid">
+    <img src="shot_reflections.png" alt="Weekly reflections screen">
+  </div>
 
-  <h2>Weekly reflections (optional)</h2>
-  <p>Lumi Journal can generate a short weekly reflection written by AI. This
-  feature is optional and off until you ask for it. The first time you use
-  it, we show a consent screen and ask you to agree.</p>
-  <p>When you tap to generate a reflection:</p>
-  <ul>
-    <li>That week's entries (dates, moods, and lines) are sent over an
-        encrypted (HTTPS) connection to our reflection service, which
-        forwards them to our AI provider, <strong>Anthropic</strong>, to
-        write the reflection text.</li>
-    <li>The reflection is returned to your device and saved there.</li>
-    <li>Your entries are processed only to create that reflection. They are
-        <strong>not stored</strong> on our servers or by us. Our service
-        keeps only a small counter (tied to a random ID, see below) so it
-        can rate-limit requests, and that counter expires automatically.</li>
-  </ul>
-  <p>Anthropic processes the request to generate the text and does not use
-  it to train its models. See Anthropic's privacy policy at
-  <a href="https://www.anthropic.com/legal/privacy">anthropic.com/legal/privacy</a>.
-  Our reflection service is hosted on Cloudflare.</p>
-
-  <h2>Random install ID</h2>
-  <p>To stop abuse of the reflection service, the app generates a random
-  identifier (a <code>UUID</code>) the first time it runs and stores it on
-  your device. It is sent only with reflection requests, purely so the
-  service can count how many requests come from one install. It is not your
-  name, email, or account — there is no account — and it is not linked to
-  your identity or your entries.</p>
-
-  <h2>Anonymous usage counts</h2>
-  <p>So we can see, in aggregate, whether features are used, the app may send
-  anonymous event counts (for example, "a reflection was generated"). These
-  contain no identifier, no device information, and nothing that can be
-  linked back to you — just a running tally.</p>
-
-  <h2>Purchases</h2>
-  <p>Weekly reflections are a paid subscription. Payments are handled entirely
-  by the Apple App Store or Google Play and managed through our subscriptions
-  provider, RevenueCat. We never see or receive your credit card or payment
-  details. See
-  <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>.</p>
-
-  <h2>What we do NOT do</h2>
-  <ul>
-    <li>No advertising and no ad networks.</li>
-    <li>No third-party tracking or analytics SDKs.</li>
-    <li>No selling or sharing of your data — there is nothing to sell.</li>
-    <li>No location, contacts, photos, or health data access.</li>
-  </ul>
-
-  <h2>Keeping and deleting your data</h2>
-  <p>Because your journal is stored locally, you are in control. You can
-  export everything to a CSV file at any time from Settings. Deleting the app
-  removes all local data from your device. Reflection requests leave nothing
-  behind on our side beyond the temporary rate-limit counter, which expires
-  on its own.</p>
-
-  <h2>Children</h2>
-  <p>Lumi Journal is not directed to children under 13 (or under 16 where
-  applicable), and we do not knowingly collect information from them.</p>
-
-  <h2>Your rights</h2>
-  <p>Depending on where you live (for example under GDPR or CCPA), you may
-  have rights to access or delete personal data a company holds about you.
-  Because we do not hold personal data that identifies you on our servers,
-  there is generally nothing for us to retrieve or erase — your data is on
-  your device and under your control. If you have questions, contact us at
-  the email above.</p>
-
-  <h2>Changes to this policy</h2>
-  <p>If we change this policy, we'll update the date at the top and, for
-  meaningful changes, note it in the app or its store listing.</p>
-
-  <hr>
-  <footer>Lumi Journal · Firefly Software · This policy is provided for
-  transparency and does not constitute legal advice.</footer>
+  <footer>
+    <a href="privacy.html">Privacy Policy</a> ·
+    <a href="support.html">Support</a> ·
+    <a href="mailto:fireflysoftware1@gmail.com">fireflysoftware1@gmail.com</a>
+    <br><br>Lumi Journal · Firefly Software
+  </footer>
 
 </div>
 </body>
