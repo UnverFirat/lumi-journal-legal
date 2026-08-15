@@ -45,15 +45,15 @@
 <div class="wrap">
 
   <h1>Privacy Policy</h1>
-  <p class="sub">Lumi Journal · Last updated 22 July 2026</p>
+  <p class="sub">Lumi Journal · Last updated 13 August 2026</p>
 
   <div class="tldr">
     <p style="margin:0"><strong>The short version.</strong> Lumi Journal has
     no accounts and collects no personal information. Your journal lives on
-    your device. Nothing is sent anywhere unless you personally tap to
-    generate a weekly reflection — and even then, that week's entries are
-    read once to write the reflection and are never stored on our servers.
-    We don't track you, show ads, or sell data. Ever.</p>
+    your device. Nothing you write is sent anywhere unless you personally ask
+    for a reflection or ask your journal a question — and even then, the
+    entries are read once to write the answer and are never stored on our
+    servers. We don't show ads or sell data. Ever.</p>
   </div>
 
   <h2>Who we are</h2>
@@ -67,50 +67,95 @@
   <h2>What stays on your device</h2>
   <p>Everything you write stays on your phone, in the app's local storage:</p>
   <ul>
-    <li>Your daily entries — the mood you pick and the single line you write, with the date.</li>
-    <li>Any weekly reflections you've generated.</li>
-    <li>Your settings (reminder on/off and time).</li>
+    <li>Your daily entries — the mood you pick, the single line you write, any
+        tags you add, and the date.</li>
+    <li>Any reflections you've generated, and the answers to any questions you
+        have asked your journal.</li>
+    <li>Your settings (reminder on/off and time, language, app lock, colours).</li>
   </ul>
-  <p>We cannot see this data. It never leaves your device except in the one
-  case described next.</p>
+  <p>We cannot see this data. It never leaves your device except in the two
+  cases described next, both of which you start yourself.</p>
 
-  <h2>Weekly reflections (optional)</h2>
-  <p>Lumi Journal can generate a short weekly reflection written by AI. This
-  feature is optional and off until you ask for it. The first time you use
-  it, we show a consent screen and ask you to agree.</p>
+  <h2>Reflections (optional)</h2>
+  <p>Lumi Journal can write you a short reflection on a week, a month or a
+  year, using AI. This feature is optional and off until you ask for it. The
+  first time you use it, we show a consent screen and ask you to agree.</p>
   <p>When you tap to generate a reflection:</p>
   <ul>
-    <li>That week's entries (dates, moods, and lines) are sent over an
-        encrypted (HTTPS) connection to our reflection service, which
-        forwards them to our AI provider, <strong>Anthropic</strong>, to
-        write the reflection text.</li>
+    <li>The entries for <strong>that period only</strong> (dates, moods, and
+        lines) are sent over an encrypted (HTTPS) connection to our reflection
+        service, which forwards them to our AI provider,
+        <strong>Anthropic</strong>, to write the reflection text. A weekly
+        reflection sends that week; a yearly one sends that year.</li>
+    <li>Up to three reflections Lumi has <strong>already written you</strong>
+        about earlier periods are sent with them, so the new one can tell what
+        is continuing rather than starting from nothing each time. These are
+        the app's own earlier output, not additional entries from your
+        journal.</li>
     <li>The reflection is returned to your device and saved there.</li>
-    <li>Your entries are processed only to create that reflection. They are
-        <strong>not stored</strong> on our servers or by us. Our service
-        keeps only a small counter (tied to a random ID, see below) so it
-        can rate-limit requests, and that counter expires automatically.</li>
+    <li>What is sent is processed only to write that one reflection. It is
+        <strong>not stored</strong> on our servers or by us. Our service keeps
+        only a small counter (tied to a random ID, see below) so it can
+        rate-limit requests, and that counter expires automatically.</li>
   </ul>
-  <p>Anthropic processes the request to generate the text and does not use
-  it to train its models. See Anthropic's privacy policy at
+
+  <h2>Asking your journal a question (optional)</h2>
+  <p>You can ask Lumi a free-form question about your own days — for example
+  "what did my best weeks have in common?". This is the one feature that
+  reads across more than a single period, because a question like that cannot
+  be answered from one week.</p>
+  <ul>
+    <li>When you ask a question, your question and up to your
+        <strong>last 366 logged days</strong> (dates, moods, and lines) are
+        sent over an encrypted connection to the same service, and on to
+        Anthropic, to write the answer.</li>
+    <li>The answer comes back to your device and is saved there, with the
+        question, so you can read it again. You can delete any question and
+        its answer from the app at any time.</li>
+    <li>As with reflections, what is sent is used once to write the answer and
+        is not stored on our servers.</li>
+    <li>The same consent screen covers this, and the app says next to the
+        question field how far back an answer reads.</li>
+  </ul>
+
+  <p>Anthropic processes these requests to generate the text and does not use
+  them to train its models. See Anthropic's privacy policy at
   <a href="https://www.anthropic.com/legal/privacy">anthropic.com/legal/privacy</a>.
   Our reflection service is hosted on Cloudflare.</p>
 
   <h2>Random install ID</h2>
   <p>To stop abuse of the reflection service, the app generates a random
   identifier (a <code>UUID</code>) the first time it runs and stores it on
-  your device. It is sent only with reflection requests, purely so the
-  service can count how many requests come from one install. It is not your
-  name, email, or account — there is no account — and it is not linked to
+  your device. It is sent only with reflection and question requests, purely
+  so the service can count how many requests come from one install. It is not
+  your name, email, or account — there is no account — and it is not linked to
   your identity or your entries.</p>
 
-  <h2>Anonymous usage counts</h2>
-  <p>So we can see, in aggregate, whether features are used, the app may send
-  anonymous event counts (for example, "a reflection was generated"). These
-  contain no identifier, no device information, and nothing that can be
-  linked back to you — just a running tally.</p>
+  <h2>Usage analytics</h2>
+  <p>Two separate things, and neither of them ever includes what you write.</p>
+  <ul>
+    <li><strong>Only if you agree:</strong> the app uses
+        <strong>Google Firebase Analytics</strong> to record which screens you
+        open and how long a session lasts. We ask you once, inside the app,
+        and it stays off unless you say yes. You can change your mind at any
+        time in Settings — turning it off also clears the analytics identifier
+        Firebase generated, not just future events. See
+        <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>.</li>
+    <li><strong>Always, and anonymous:</strong> the app sends plain daily
+        counts of a few events (for example, "a reflection was generated").
+        These carry no identifier and no device information — just a running
+        tally, so we can tell whether a feature is used at all.</li>
+  </ul>
+  <p>Your entries, moods, tags, reflections and answers are never part of
+  either.</p>
+
+  <h2>Face ID, Touch ID and the app lock</h2>
+  <p>You can lock the app behind your device's own biometrics or passcode.
+  That check is performed by your phone; the app is only told whether it
+  succeeded. We never see or store your face, fingerprint or passcode.</p>
 
   <h2>Purchases</h2>
-  <p>Weekly reflections are a paid subscription. Payments are handled entirely
+  <p>Some features are a paid subscription. Payments are handled entirely
   by the Apple App Store or Google Play and managed through our subscriptions
   provider, RevenueCat. We never see or receive your credit card or payment
   details. See
@@ -119,17 +164,19 @@
   <h2>What we do NOT do</h2>
   <ul>
     <li>No advertising and no ad networks.</li>
-    <li>No third-party tracking or analytics SDKs.</li>
+    <li>No analytics that includes anything you wrote.</li>
     <li>No selling or sharing of your data — there is nothing to sell.</li>
     <li>No location, contacts, photos, or health data access.</li>
   </ul>
 
   <h2>Keeping and deleting your data</h2>
-  <p>Because your journal is stored locally, you are in control. You can
-  export everything to a CSV file at any time from Settings. Deleting the app
-  removes all local data from your device. Reflection requests leave nothing
-  behind on our side beyond the temporary rate-limit counter, which expires
-  on its own.</p>
+  <p>Because your journal is stored locally, you are in control. From Settings
+  you can export everything as CSV files — one for your days, one for the
+  reflections Lumi wrote you — and import them back on another phone. Inside
+  the app you can delete an individual day, or an individual question and its
+  answer. Deleting the app removes all local data from your device.
+  Reflection and question requests leave nothing behind on our side beyond the
+  temporary rate-limit counter, which expires on its own.</p>
 
   <h2>Children</h2>
   <p>Lumi Journal is not directed to children under 13 (or under 16 where
