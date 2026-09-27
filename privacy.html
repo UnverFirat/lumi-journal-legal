@@ -45,14 +45,14 @@
 <div class="wrap">
 
   <h1>Privacy Policy</h1>
-  <p class="sub">Lumi Journal · Last updated 13 August 2026</p>
+  <p class="sub">Lumi Journal · Last updated 27 September 2026</p>
 
   <div class="tldr">
     <p style="margin:0"><strong>The short version.</strong> Lumi Journal has
     no accounts and collects no personal information. Your journal lives on
-    your device. Nothing you write is sent anywhere unless you personally ask
-    for a reflection or ask your journal a question — and even then, the
-    entries are read once to write the answer and are never stored on our
+    your device. Nothing you write is sent anywhere unless you agree to
+    reflections or ask your journal a question — and even then, the
+    entries are read once to write the text and are never stored on our
     servers. We don't show ads or sell data. Ever.</p>
   </div>
 
@@ -67,26 +67,32 @@
   <h2>What stays on your device</h2>
   <p>Everything you write stays on your phone, in the app's local storage:</p>
   <ul>
-    <li>Your daily entries — the mood you pick, the single line you write, any
-        tags you add, and the date.</li>
+    <li>Your daily entries — the feeling you pick (with the 1–5 mood score that
+        goes with it), the single line you write, any tags you add, and the
+        date.</li>
     <li>Any reflections you've generated, and the answers to any questions you
         have asked your journal.</li>
     <li>Your settings (reminder on/off and time, language, app lock, colours).</li>
   </ul>
   <p>We cannot see this data. It never leaves your device except in the two
-  cases described next, both of which you start yourself.</p>
+  cases described next, and only after you agree on the consent screen.</p>
 
   <h2>Reflections (optional)</h2>
   <p>Lumi Journal can write you a short reflection on a week, a month or a
   year, using AI. This feature is optional and off until you ask for it. The
   first time you use it, we show a consent screen and ask you to agree.</p>
-  <p>When you tap to generate a reflection:</p>
+  <p>A reflection is written when you tap to generate one. If you subscribe
+  to Lumi Pro and have agreed on the consent screen, the reflection for a
+  week, month or year that has just ended is also written on its own, the
+  next time you open the app. Either way:</p>
   <ul>
-    <li>The entries for <strong>that period only</strong> (dates, moods, and
-        lines) are sent over an encrypted (HTTPS) connection to our reflection
+    <li>The entries for <strong>that period only</strong> (dates, feelings,
+        mood scores and lines) are sent over an encrypted (HTTPS) connection to our reflection
         service, which forwards them to our AI provider,
         <strong>Anthropic</strong>, to write the reflection text. A weekly
-        reflection sends that week; a yearly one sends that year.</li>
+        reflection sends that week; a yearly one sends that year. A letter
+        about two dates you pick sends the days between them, up to a
+        year.</li>
     <li>Up to three reflections Lumi has <strong>already written you</strong>
         about earlier periods are sent with them, so the new one can tell what
         is continuing rather than starting from nothing each time. These are
@@ -98,6 +104,10 @@
         only a small counter (tied to a random ID, see below) so it can
         rate-limit requests, and that counter expires automatically.</li>
   </ul>
+  <p>To stop reflections being written on their own, cancel Lumi Pro in
+  your App Store or Google Play subscriptions. Once the paid period ends,
+  nothing is sent unless you tap to generate a reflection or ask a question
+  yourself.</p>
 
   <h2>Asking your journal a question (optional)</h2>
   <p>You can ask Lumi a free-form question about your own days — for example
@@ -106,7 +116,8 @@
   be answered from one week.</p>
   <ul>
     <li>When you ask a question, your question and up to your
-        <strong>last 366 logged days</strong> (dates, moods, and lines) are
+        <strong>last 366 logged days</strong> (dates, feelings, mood scores and
+        lines) are
         sent over an encrypted connection to the same service, and on to
         Anthropic, to write the answer.</li>
     <li>The answer comes back to your device and is saved there, with the
