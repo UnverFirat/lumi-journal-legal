@@ -1,6 +1,8 @@
 durum: destek
 özet: Lumi'nin tanıtım + gizlilik sayfaları (GitHub Pages) — 1.7 için privacy.html güncellenmeli
 güncelleme: 2026-11-23
+tür: gizlilik
+uygulama: one_line_journal
 ---
 ## Nerede kaldık
 Ayrı uygulama değil; `one_line_journal`'ın landing/support/gizlilik sayfaları. Son güncelleme 1.4 sürümü için.
